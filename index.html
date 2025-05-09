@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Defrost and Ready Dates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a product..." onkeyup="filterAndDisplayProducts()">
+        </div>
+
+        <div id="product-container">
+            <!-- Product cards will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        // Sample products data
+        const products = [
+            { id: 1, name: "Cheese", defrostDays: 0, readyDays: 1, discardDays: 5 },
+            { id: 2, name: "Chicken Topping", defrostDays: 0, readyDays: 1, discardDays: 3 },
+            { id: 3, name: "Pepperoni", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 4, name: "Ham", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 5, name: "Beef", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 6, name: "Pork", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 7, name: "Tomatoes", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 8, name: "Bacon", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 9, name: "Cheese Triangles", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 10, name: "Chicken Strips", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 11, name: "Spicy Chicken Strips", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 12, name: "Fries", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 13, name: "Potato Wedges", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 14, name: "Halloumi Fries", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id: 15, name: "Garlic Bread", defrostDays: 0, readyDays: 1, discardDays: 4 },
+            { id
